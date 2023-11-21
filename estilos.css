@@ -90,7 +90,7 @@ a:hover {
     justify-items: center;
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
     margin: 1%;
@@ -108,6 +108,12 @@ a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    .main_nav_items {
+        gap: 10%;
+    }
 }
 
 .home_div {
@@ -147,9 +153,17 @@ a:hover {
 
 .form_body {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     gap: 5%;
     justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .form_body {
+        flex-direction: column;
+    }
 }
 
 .form_video {
@@ -167,6 +181,14 @@ a:hover {
     inset: 0;
     z-index: -1;
     justify-content: center;
+    justify-items: center;
+}
+
+@media screen and (max-width: 500px) {
+    .history_body {
+        flex-flow: column;
+        align-items: center;
+    }
 }
 
 .album_audio {
@@ -187,14 +209,18 @@ a:hover {
     align-items: center;
 }
 
-
-
 .card_title {
     font-size: 33px;
     font-weight: bold;
     margin: 0.2em;
     text-align: center;
     color: #51d1f6;
+}
+
+@media screen and (max-width: 1000px) {
+    .card_title {
+        font-size: 20px;
+    }
 }
 
 .card_content {
@@ -236,15 +262,4 @@ a:hover {
         /* object-fit: cover; */
         display: block;
     }
-}
-
-.webmap_image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-}
-
-.webmap_image img{
-    width: 70%;
 }
