@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="https://styles.redditmedia.com/t5_2xz4h/styles/communityIcon_mrsaiwhh00w51.png">
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="S. Delgado">
+    <meta name="description" content="A little form about Bring Me The Horizon">
+    <meta name="Classification" content="Music">
+    <meta name="keywords" content="HTML, bring me the horizon, metal, metalcore, deathcore, forms, questions">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bring Me The Horizon</title>
+</head>
+
+<body>
+    <div class="form_uppertext">
+        <header class="form_title">
+            <h1>Form</h1>
+        </header>
+        This form consist of some questions about bring me the horizon knowledge
+    </div>
+    <nav class="main_nav">
+        <div class="main_nav_items">
+            <a href="index.html">Home</a>
+            <a href="mapaweb.html">WebMap</a>
+            <a href="bmthAlbums.html">Albums</a>
+        </div>
+    </nav>
+    <div class="form_body">
+        <form action="https://www.youtube.com/watch?v=xvFZjo5PgG0" method="post" enctype="text/plain" name="form">
+            <!--Cambiar URL por una a la que quieras enviar el formulario-->
+            <fieldset>
+                <legend>Questions</legend>
+                <div><br><br>
+                    <label>Do you listen to BMTH?</label>
+                    <select name="Time">
+                        <option value="no">No</option>
+                        <option value="sotimes">Sometimes</option>
+                        <option value="veoft">Very often</option>
+                        <option value="lot">A lot</option>
+                    </select>
+                </div><br><br>
+                <div>
+                    <label>Which is the name of the newest Album of BMTH?<br><br></label>
+                    <input type="text" id="newestAlb" minlength="3" maxlength="19">
+                </div><br><br>
+                <div>
+                    <label>How many members does BMTH have?<br><br></label>
+                    <input type="number" id="memAmount" name="edad" min="0" max="99">
+                </div><br><br>
+                <div>
+                    <label>Upload your favorite band photo<br><br></label>
+                    <input type="file" name="foto">
+                </div><br><br>
+                <div>
+                    <label>Wich of these are NOT BMTH albums?<br><br></label> <!--Checkbox de varias opciones-->
+                    <input type="checkbox" name="TheEnd" value="TheEnd">The End, So Far<br>
+                    <input type="checkbox" name="Bless" value="Bless">Count Your Blessings<br>
+                    <input type="checkbox" name="Season" value="Season">Suicide Season<br>
+                    <input type="checkbox" name="Hybrid" value="Hybrid">Hybrid Theory<br>
+                </div><br><br>
+                <div>
+                    <label>Year of foundation?<br><br></label>
+                    <input type="date" name="fecha">
+                </div><br><br>
+                <div>
+                    <label>Wich is the name of this song?</label>
+                </div><br>
+                <div>
+                    <audio controls>
+                        <source src="Tablet.wav" type="audio/wav"> <!--Reproduce un audio cuando se le da a play-->
+                    </audio>
+                </div>
+                <div>
+                    <input type="radio" name="Comedown" value="Comedown">The Comedown<br><!--  \    /\-->
+                    <input type="radio" name="Chelsea" value="Chelsea">Chelsea Smile<br> <!--   )  ( ')-->
+                    <input type="radio" name="Teardrops" value="Teardrops">Teardrops<br> <!--  (  /  )-->
+                    <input type="radio" name="Eyeless" value="Eyeless">Eyeless<br> <!--   \(__)|-->
+                </div><br><br>
+                <div>
+                    <label>Which is the main color in kingslayer video?</label>
+                    <input type="color" name="userSelectedColor" value="#fff">
+                </div><br><br>
+                <div>
+                    <label>How would you qualify this test?</label>
+                    <label>Bad</label>
+                    <input type="range" name="calificacion" min="0" max="10">
+                    <label>The Worst</label>
+                </div><br><br>
+                <div>
+                    <input type="submit" name="enviar" value="Enviar">
+                    <input type="reset" name="borrar" value="Restablecer">
+                </div>
+            </fieldset>
+        </form><br>
+        <video width="560" height="315" src="src/videos/MakingOfLUDENS.webm"
+            controls></video><!--Inserta un making off the bmth-->
+    </div>
+    <a class="home_div" href="index.html">
+        <img alt="Home" src="src/img/house.svg">
+        Home
+    </a>
+</body>
+
+</html>

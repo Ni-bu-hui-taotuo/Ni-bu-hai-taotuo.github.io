@@ -1,0 +1,250 @@
+body {
+    color: aliceblue;
+    background-size: cover;
+    background: url("src/img/BGRW.png") no-repeat;
+    background-color: #000000;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    scrollbar-width: none;
+}
+
+a:link {
+    color: #f1d4e6;
+    text-decoration: none;
+}
+
+a:active {
+    color: #f1d4e6;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #f1d4e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.main_body {
+    min-height: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    gap: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    background-color: rgba(97, 98, 179, 0.23);
+    border-radius: 5px;
+}
+
+.main_header {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    font-size: 30px;
+    gap: 1%
+}
+
+.main_header img {
+    width: 12%;
+    height: 12%;
+    filter: invert(100%);
+}
+
+.main_article {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.main_article_header {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.main_article img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.main_nav {
+    width: auto;
+    justify-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+.main_nav_items {
+    position: inherit;
+    display: flex;
+    flex-direction: row;
+    gap: 50%;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.home_div {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    bottom: 0px;
+    text-align: center;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_div img {
+    width: 2%;
+    height: 2%;
+    filter: invert(100%);
+}
+
+.main_footer {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+
+.form_title {
+    font-size: 20px;
+}
+
+.form_uppertext {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.form_body {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5%;
+    justify-content: center;
+}
+
+.form_video {
+    width: 40%;
+}
+
+.img_with_desc {
+    font-size: 14px;
+    text-align: center;
+}
+
+.history_body {
+    display: flex;
+    flex-flow: row wrap;
+    inset: 0;
+    z-index: -1;
+    justify-content: center;
+}
+
+.album_audio {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.card {
+    background: rgba(23, 23, 32, 0.47);
+    box-shadow: 0 18px 200px -60px #000000;
+    border-radius: 25px;
+    position: relative;
+    padding: 1rem 1.75rem;
+    width: 20%;
+    margin: 1%;
+    align-items: center;
+}
+
+
+
+.card_title {
+    font-size: 33px;
+    font-weight: bold;
+    margin: 0.2em;
+    text-align: center;
+    color: #51d1f6;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_text {
+    text-justify: auto;
+    font-size: 20px;
+}
+
+.card_text li:not(:last-child) {
+    padding-bottom: 3.5%;
+}
+
+.card_image {
+    height: 220px;
+    border-radius: 10px;
+    /* object-fit: cover; */
+    display: block;
+}
+
+@media screen and (max-width: 900px) {
+    .card_image {
+        height: 110px;
+        border-radius: 10px;
+        /* object-fit: cover; */
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card_image {
+        height: 55px;
+        border-radius: 10px;
+        /* object-fit: cover; */
+        display: block;
+    }
+}
+
+.webmap_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.webmap_image img{
+    width: 70%;
+}
