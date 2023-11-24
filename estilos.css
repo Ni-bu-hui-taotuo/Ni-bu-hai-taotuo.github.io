@@ -111,20 +111,23 @@ a:hover {
 }
 
 .home_div {
-    margin-top: 2%;
     display: flex;
     flex-direction: row;
     bottom: 0px;
     text-align: center;
-    font-size: 35px;
-    justify-content: center;
+    margin: 0 auto;
     align-items: center;
+    justify-content: center;
+    width: 2%;
 }
 
 .home_div img {
-    width: 2%;
-    height: 2%;
+    width: -96%;
     filter: invert(100%);
+}
+
+.home_text {
+    font-size: 150%;
 }
 
 .main_footer {
