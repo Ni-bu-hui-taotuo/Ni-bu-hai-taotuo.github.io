@@ -41,7 +41,6 @@ a:hover {
     align-items: center;
     justify-items: center;
     flex-direction: column;
-    gap: 20px;
     width: 70%;
     margin-top: 0;
     background-color: rgba(97, 98, 179, 0.23);
@@ -90,7 +89,6 @@ a:hover {
     justify-items: center;
     text-align: center;
     display: flex;
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
     margin: 1%;
@@ -101,9 +99,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     gap: 50%;
-    text-decoration: none;
     font-size: 25px;
-    color: black;
     font-weight: 500;
     align-items: center;
     justify-content: center;
@@ -152,8 +148,6 @@ a:hover {
 }
 
 .form_uppertext {
-    align-items: center;
-    justify-content: center;
     text-align: center;
 }
 
@@ -168,8 +162,12 @@ a:hover {
 }
 
 .img_with_desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 14px;
     text-align: center;
+    flex-direction: column;
 }
 
 .history_body {
@@ -237,10 +235,18 @@ a:hover {
     justify-content: center;
     align-items: center;
     justify-items: center;
+    flex-direction: column;
 }
 
 .webmap_image img {
     width: 70%;
+}
+
+.table{
+    border: 1px solid #000;
+    border-collapse: collapse;
+    overflow-x: auto;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 1000px) {
